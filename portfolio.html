@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- шапка і навігація -->
-    <header class="full-width">
+    <header>
       <div class="container my-header">
         <!-- навігаційна панель -->
         <nav class="my-nav">
@@ -32,7 +32,7 @@
             <li class="my-link-item">
               <a
                 href="./portfolio.html"
-                class="my-link body-medium-text dark current-page"
+                class="my-link body-medium-text current-page"
                 >Portfolio</a
               >
             </li>
@@ -44,24 +44,106 @@
         <address>
           <ul class="my-address-list">
             <li class="my-address-item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="my-address-link body-text text"
+              <a href="mailto:info@devstudio.com" class="my-address-link text"
                 >info@devstudio.com</a
               >
             </li>
             <li class="my-address-item">
-              <a href="tel:+110001111111" class="my-address-link body-text text"
+              <a href="tel:+110001111111" class="my-address-link text"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <!--mobile menu-->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32" height="22">
+            <use href="./images/symbol-defs.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="my-mobile-menu js-menu-container">
+        <div class="container for-menu">
+          <button class="my-menu-close js-close-menu">
+            <svg class="my-menu-close-svg" width="8" height="8">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-nav">
+            <ul class="mobile-link-list">
+              <li class="mobile-link-item">
+                <a href="./index.html" class="mobile-link header-2 dark"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-link-item">
+                <a
+                  href="./portfolio.html"
+                  class="mobile-link header-2 current-page"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-link-item">
+                <a href="" class="mobile-link header-2 dark">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="bottom-push-menu">
+            <address>
+              <ul class="mobile-address-list">
+                <li class="mobile-address-item">
+                  <a href="tel:+110001111111" class="mobile-phone-link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-address-item">
+                  <a href="mailto:info@devstudio.com" class="mobile-mail-link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mobile-social-list">
+              <li>
+                <a href="#" class="mobile-social-link">
+                  <svg class="icon-mobile-social" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="mobile-social-link">
+                  <svg class="icon-mobile-social" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="mobile-social-link">
+                  <svg class="icon-mobile-social" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="mobile-social-link">
+                  <svg class="icon-mobile-social" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <!--Portfolio-->
-      <section class="full-width my-portfolio">
+      <section class="my-portfolio">
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
           <!--Filters-->
@@ -94,7 +176,6 @@
           </ul>
           <!--Portfolio table-->
           <ul class="my-portfolio-list">
-            <!--Row 1-->
             <li class="my-portfolio-item">
               <a href="#" class="my-portfolio-link">
                 <div class="my-portfolio-card">
@@ -158,7 +239,6 @@
                 </div></a
               >
             </li>
-            <!--Row 2-->
             <li class="my-portfolio-item">
               <a href="#" class="my-portfolio-link">
                 <div class="my-portfolio-card">
@@ -222,7 +302,6 @@
                 </div></a
               >
             </li>
-            <!--Row 3-->
             <li class="my-portfolio-item">
               <a href="#" class="my-portfolio-link">
                 <div class="my-portfolio-card">
@@ -291,7 +370,7 @@
       </section>
     </main>
     <!--підвал-->
-    <footer class="bg-dark full-width">
+    <footer class="bg-dark">
       <div class="container my-footer-box">
         <div class="my-footer">
           <a href="./index.html" class="logo light"
@@ -302,40 +381,68 @@
             digital marketing & growth solutions.
           </p>
         </div>
+        <!--соцмережі-->
         <div class="my-footer-social">
           <p class="body-medium-text extra-light">Social media</p>
           <ul class="my-footer-social-list">
             <li>
               <a href="#" class="my-footer-social-link">
-                <svg class="icon-footer">
+                <svg class="icon-footer" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="my-footer-social-link">
-                <svg class="icon-footer">
+                <svg class="icon-footer" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="my-footer-social-link">
-                <svg class="icon-footer">
+                <svg class="icon-footer" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="my-footer-social-link">
-                <svg class="icon-footer">
+                <svg class="icon-footer" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+        <!--форма підписки-->
+        <div class="my-footer-form">
+          <p class="body-medium-text extra-light">Subscribe</p>
+          <form
+            name="subscribe_form"
+            autocomplete="on"
+            novalidate
+            class="subscribe-form"
+          >
+            <input
+              type="email"
+              class="subscribe-input"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button
+              type="submit"
+              class="main-button button-text subscribe-button"
+            >
+              Subscribe
+              <svg width="24" height="24" class="subscribe-icon">
+                <use href="./images/symbol-defs.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <script src="./java/mobile-menu.js"></script>
   </body>
 </html>
