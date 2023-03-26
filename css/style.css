@@ -226,7 +226,6 @@ header {
   margin-bottom: 16px;
 }
 .subscribe-input {
-  margin-right: 24px;
   width: 100%;
   font-size: 12px;
   line-height: 2;
@@ -507,6 +506,7 @@ header {
     stroke: #000;
   }
   .my-mobile-menu {
+    z-index: 4;
     position: fixed;
     background: var(--extra-light);
     width: 100%;
